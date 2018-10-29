@@ -45,10 +45,10 @@ app.get('/todos/:id', (req, res) => {
             res.status(400).send(e);
         })
     }
-})
+});
 
 app.listen(port, () => {
     console.log(`Started server at port ${port}`);
-};
+});
 
 module.exports = {app};
