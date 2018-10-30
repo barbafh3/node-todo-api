@@ -1,0 +1,25 @@
+@host = localhost:3000
+// @host = cryptic-bastion-36225.herokuapp.com
+
+// Gets all todos
+GET http://{{host}}/todos 
+
+###
+
+// Posts a single todo
+POST http://{{host}}/todos
+content-type: application/json
+
+{
+    "text": "teste"
+}
+
+###
+
+// Get a single todo
+GET http://{{host}}/todos/5bd77a8f4a402f119ce879df
+
+###
+
+// Deletes a single todo
+DELETE http://{{host}}/todos/5bd7a1b01214e9fa7771818a
