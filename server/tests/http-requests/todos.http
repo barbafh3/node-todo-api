@@ -11,7 +11,7 @@ POST http://{{host}}/todos
 content-type: application/json
 
 {
-    "text": "teste"
+    "text": "Hoje estamos felises denovo"
 }
 
 ###
