@@ -116,7 +116,7 @@ describe('DELETE /todos/:id', () => {
                     return done();
                 }
                 Todo.findById(hexId).then((todo) => {
-                    expect(todo).toNotExist();
+                    expect(todo).toBeFalsy();
                     done();
                 }).catch((e) => done(e));
             })
@@ -152,8 +152,8 @@ describe('PATCH /todos/:id', () => {
             .expect(200)
             .expect((res) => {
                 expect(res.body.todo.text).toBe(newTodo.text);
-                expect(res.body.todo.completed).toBe(true);
-                expect(res.body.todo.completedAt).not.toBeNull();
+                expect(res.body.todo.completed).toBeTruthy();
+                expect(typeof res.body.todo.completedAt).toBe('number');
             }).end(done);
     });
     it('should clear completedAt when todo is not completed', (done) => {
@@ -169,7 +169,7 @@ describe('PATCH /todos/:id', () => {
             .expect(200)
             .expect((res) => {
                 expect(res.body.todo.text).toBe(newTodo.text);
-                expect(res.body.todo.completed).toBe(false);
+                expect(res.body.todo.completed).toBeFalsy();
                 expect(res.body.todo.completedAt).toBeNull();
             }).end(done);
     });
