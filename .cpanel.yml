@@ -1,5 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/gtimoth1/repositories/node-todo-api
-    - /bin/cp node $DEPLOYPATH/server/server.js
