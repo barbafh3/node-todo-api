@@ -10,3 +10,6 @@ content-type: application/json
 }
 
 ###
+
+GET http://{{host}}/users/me
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRhMzUwMTU4N2NhNWFhZTgxMWJjODAiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMDI3MDczfQ.2UdkvkmpWujzXhEme9CIs2ZCkwTuHzftxP9K4L_CQ5Y
