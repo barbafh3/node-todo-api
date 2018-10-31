@@ -27,7 +27,7 @@ DELETE http://{{host}}/todos/5bd7a1b01214e9fa7771818a
 ###
 
 // Updates a single todo 5bd91253bdcb6d48cc09be9d
-PATCH http://{{host}}/todos/5bd91253bdcb6d48cc09be9d
+PATCH http://{{host}}/todos/5bd9a6e380da1e3b5845c424
 content-type: application/json
 
 {
