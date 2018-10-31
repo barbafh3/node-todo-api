@@ -1,0 +1,12 @@
+@host = localhost:3000
+// @host = cryptic-bastion-36225.herokuapp.com
+
+POST http://{{host}}/users
+content-type: application/json
+
+{
+    "email": "abcd@gmail.com",
+    "password": "123abc"
+}
+
+###
