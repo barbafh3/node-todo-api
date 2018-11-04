@@ -1,13 +1,9 @@
-@host = localhost:3000
-// @host = cryptic-bastion-36225.herokuapp.com
+//@host = localhost:3000
+@host = cryptic-bastion-36225.herokuapp.com
 
 POST http://{{host}}/users
 content-type: application/json
 
-# {
-#     "email": "onim@teste.com",
-#     "password": "456def"
-# }
 {
     "email": "onildo2@teste.com",
     "password": "456def"
@@ -16,7 +12,7 @@ content-type: application/json
 ###
 
 GET http://{{host}}/users/me
-x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNDU4Mzg1NWIzYTFiMTQ4MzE3YzUiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjkzOTM4fQ.3BV4PMSSngUgv0x9fKd040-OzfWwkmEa-h1H-QjbaLo
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmN2VhYjZjY2NlNDAwMTYzMTgxZjciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzczNjEyfQ.UqZWIZ0LyvPSUtJgrqwt9GGz64rvPBFMEmDtxuJkFww
 
 ###
 
@@ -24,7 +20,7 @@ POST http://{{host}}/users/login
 content-type: application/json
 
 {
-    "email": "onim@teste.com",
+    "email": "onildo2@teste.com",
     "password": "456def"
 }
 
