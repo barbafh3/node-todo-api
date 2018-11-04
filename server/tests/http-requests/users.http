@@ -23,3 +23,9 @@ content-type: application/json
     "email": "onim@teste.com",
     "password": "456def"
 }
+
+###
+
+DELETE http://{{host}}/users/me/token
+content-type: application/json
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNDU4Mzg1NWIzYTFiMTQ4MzE3YzUiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjkzNDQzfQ.-VBLHKcu2MWtdWpQPPU20_yyP391emADOwjmDK7bU-w
