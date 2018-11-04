@@ -1,5 +1,5 @@
-//@host = http://localhost:3000
-@host = https://cryptic-bastion-36225.herokuapp.com
+@host = http://localhost:3000
+//@host = https://cryptic-bastion-36225.herokuapp.com
 
 // Gets all todos
 GET {{host}}/todos
@@ -13,7 +13,7 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTljN2NhMmM5NzExNzg
 // Posts a single todo
 POST {{host}}/todos
 content-type: application/json
-x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmN2VhYjZjY2NlNDAwMTYzMTgxZjciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzczOTcwfQ.s3zQak8TUs6hoDcxfarR37RGxF3__5B7QXyArO_oq2s
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODQyOTAwNTFmYTE5YmMzY2IwNGYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1MzA4fQ.lH-kvE7ARMGChg8C0gOdesQjvBOr6H1IOhXSqWIVA6c
 
 {
     "text": "Hoje estamos felises denovo"

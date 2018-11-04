@@ -1,5 +1,3 @@
-
-
 var {User} = require('./../models/user')
 
 module.exports.authenticate = (req, res, next) => {

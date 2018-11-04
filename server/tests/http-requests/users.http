@@ -1,5 +1,5 @@
-//@host = localhost:3000
-@host = cryptic-bastion-36225.herokuapp.com
+@host = localhost:3000
+//@host = cryptic-bastion-36225.herokuapp.com
 
 POST http://{{host}}/users
 content-type: application/json
@@ -12,7 +12,7 @@ content-type: application/json
 ###
 
 GET http://{{host}}/users/me
-x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmN2VhYjZjY2NlNDAwMTYzMTgxZjciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzczNjEyfQ.UqZWIZ0LyvPSUtJgrqwt9GGz64rvPBFMEmDtxuJkFww
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODQyOTAwNTFmYTE5YmMzY2IwNGYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1MzA4fQ.lH-kvE7ARMGChg8C0gOdesQjvBOr6H1IOhXSqWIVA6c
 
 ###
 
