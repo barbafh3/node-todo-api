@@ -4,8 +4,12 @@
 POST http://{{host}}/users
 content-type: application/json
 
+# {
+#     "email": "onim@teste.com",
+#     "password": "456def"
+# }
 {
-    "email": "onim@teste.com",
+    "email": "onildo@teste.com",
     "password": "456def"
 }
 

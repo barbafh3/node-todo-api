@@ -2,13 +2,19 @@
 // @host = cryptic-bastion-36225.herokuapp.com
 
 // Gets all todos
-GET http://{{host}}/todos 
+GET http://{{host}}/todos
+content-type: application/json
+#x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTk0OGNhMmM5NzExNzgzYzZlZjQiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjk4NTA0fQ.rx4_8isR-akmnPDz06fBi9ExDyJ-zZvGCbnjhI_2brg
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTljN2NhMmM5NzExNzgzYzZlZjciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjk4NjMxfQ.BALh2DHjnUhpLto_iMZMvIUhIJZ6yUzb_KzRGDoo18M
+
 
 ###
 
 // Posts a single todo
 POST http://{{host}}/todos
 content-type: application/json
+#x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTk0OGNhMmM5NzExNzgzYzZlZjQiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjk4NTA0fQ.rx4_8isR-akmnPDz06fBi9ExDyJ-zZvGCbnjhI_2brg
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTljN2NhMmM5NzExNzgzYzZlZjciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjk4NjMxfQ.BALh2DHjnUhpLto_iMZMvIUhIJZ6yUzb_KzRGDoo18M
 
 {
     "text": "Hoje estamos felises denovo"
