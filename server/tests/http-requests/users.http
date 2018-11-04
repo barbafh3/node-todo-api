@@ -5,11 +5,21 @@ POST http://{{host}}/users
 content-type: application/json
 
 {
-    "email": "abcd@gmail.com",
-    "password": "123abc"
+    "email": "onim@teste.com",
+    "password": "456def"
 }
 
 ###
 
 GET http://{{host}}/users/me
-x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRhMzUwMTU4N2NhNWFhZTgxMWJjODAiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMDI3MDczfQ.2UdkvkmpWujzXhEme9CIs2ZCkwTuHzftxP9K4L_CQ5Y
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNDU4Mzg1NWIzYTFiMTQ4MzE3YzUiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjkzOTM4fQ.3BV4PMSSngUgv0x9fKd040-OzfWwkmEa-h1H-QjbaLo
+
+###
+
+POST http://{{host}}/users/login
+content-type: application/json
+
+{
+    "email": "onim@teste.com",
+    "password": "456def"
+}
