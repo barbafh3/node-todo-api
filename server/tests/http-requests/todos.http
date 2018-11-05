@@ -1,11 +1,11 @@
-@host = http://localhost:3000
-//@host = https://cryptic-bastion-36225.herokuapp.com
+//@host = http://localhost:3000
+@host = https://cryptic-bastion-36225.herokuapp.com
 
 // Gets all todos
 GET {{host}}/todos
 content-type: application/json
 #x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTk0OGNhMmM5NzExNzgzYzZlZjQiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjk4NTA0fQ.rx4_8isR-akmnPDz06fBi9ExDyJ-zZvGCbnjhI_2brg
-x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTljN2NhMmM5NzExNzgzYzZlZjciLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMjk4NjMxfQ.BALh2DHjnUhpLto_iMZMvIUhIJZ6yUzb_KzRGDoo18M
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODY2MTVhNzgxMTAwMTY5ZTY2NWYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1NTkxfQ.E1yU4fBxX9NmCsAcZBx0iasoq003BJoWqC0xotZnRpA
 
 
 ###
@@ -13,27 +13,30 @@ x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRlNTljN2NhMmM5NzExNzg
 // Posts a single todo
 POST {{host}}/todos
 content-type: application/json
-x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODQyOTAwNTFmYTE5YmMzY2IwNGYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1MzA4fQ.lH-kvE7ARMGChg8C0gOdesQjvBOr6H1IOhXSqWIVA6c
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODY2MTVhNzgxMTAwMTY5ZTY2NWYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1NTkxfQ.E1yU4fBxX9NmCsAcZBx0iasoq003BJoWqC0xotZnRpA
 
 {
-    "text": "Hoje estamos felises denovo"
+    "text": "Hoje estamos felises mais uma ves"
 }
 
 ###
 
 // Get a single todo
-GET {{host}}/todos/5bd77a8f4a402f119ce879df
+GET {{host}}/todos/5bdf867f5a781100169e6662
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODY2MTVhNzgxMTAwMTY5ZTY2NWYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1NTkxfQ.E1yU4fBxX9NmCsAcZBx0iasoq003BJoWqC0xotZnRpA
 
 ###
 
 // Deletes a single todo
-DELETE {{host}}/todos/5bd7a1b01214e9fa7771818a
+DELETE {{host}}/todos/5bdf87f15a781100169e6663
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODY2MTVhNzgxMTAwMTY5ZTY2NWYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1NTkxfQ.E1yU4fBxX9NmCsAcZBx0iasoq003BJoWqC0xotZnRpA
 
 ###
 
 // Updates a single todo 5bd91253bdcb6d48cc09be9d
-PATCH {{host}}/todos/5bd9a6e380da1e3b5845c424
+PATCH {{host}}/todos/5bdf867f5a781100169e6662
 content-type: application/json
+x-auth: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1YmRmODY2MTVhNzgxMTAwMTY5ZTY2NWYiLCJhY2Nlc3MiOiJhdXRoIiwiaWF0IjoxNTQxMzc1NTkxfQ.E1yU4fBxX9NmCsAcZBx0iasoq003BJoWqC0xotZnRpA
 
 {
     "completed": true
